@@ -1,0 +1,19 @@
+{
+    "name": "vendor/phpuro",
+    "description": "Pagina para demonstracao de projetos escrito com apenas 1 framework externa ( envio de emails )",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Phpuro\\": "src/",
+	    "src\\":"app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mega LvX"
+        }
+    ]
+}
