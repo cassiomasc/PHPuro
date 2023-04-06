@@ -6,9 +6,9 @@ class RouteHelper {
     private $routes = [
         ''=>'src\Controllers\HomeController',
         'blog'=>'src\Controllers\BlogController',
-        'contact'=>'src\Controllers\HomeController',
-        'projects'=>'src\Controllers\HomeController',
-        'about'=>'src\Controllers\HomeController',
+        'contact'=>'src\Controllers\ContactController',
+        'projects'=>'src\Controllers\ProjectsController',
+        'about'=>'src\Controllers\AboutController',
         'notFound'=>'src\Controllers\NotFoundController'];
 
     private function notFound(){
