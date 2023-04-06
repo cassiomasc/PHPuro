@@ -18,7 +18,7 @@ class BlogController {
             $db = new BlogModel();
             $title = $db->getDataFromDB($titleURI);
 
-            if (!is_null($title)) {          
+            if (!empty($title)) {          
                 $v = new BlogView();
                 $v->render($title);
             }else{
