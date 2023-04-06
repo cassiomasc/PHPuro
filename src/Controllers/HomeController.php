@@ -1,9 +1,9 @@
 <?php
 
-namespace app\Controllers;
+namespace src\Controllers;
 
 class HomeController {
     public function show() { 
-        return "Hello mundo!";
+        echo "Hello mundo!";
     }
 }

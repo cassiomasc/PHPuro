@@ -1,15 +1,15 @@
 <?php
 
-namespace src\Routes;
+namespace src\Helpers;
 
-class Route {
+class RouteHelper {
     private $routes = [
-        ''=>'app\Controllers\HomeController',
-        'blog'=>'app\Controllers\BlogController',
-        'contact'=>'app\Controllers\HomeController',
-        'projects'=>'app\Controllers\HomeController',
-        'about'=>'app\Controllers\HomeController',
-        'notFound'=>'app\Controllers\NotFoundController'];
+        ''=>'src\Controllers\HomeController',
+        'blog'=>'src\Controllers\BlogController',
+        'contact'=>'src\Controllers\HomeController',
+        'projects'=>'src\Controllers\HomeController',
+        'about'=>'src\Controllers\HomeController',
+        'notFound'=>'src\Controllers\NotFoundController'];
 
     private function notFound(){
         $c = new $this->routes['notFound'];
