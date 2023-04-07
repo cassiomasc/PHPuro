@@ -10,11 +10,11 @@ class BlogController {
         echo "oi";
     }
 
-    public function articleShow($URI) {       
+    public function articleShow($URI) {
         if (strlen($URI) <= 5) {
             return $this->show();
         }else {
-            $titleURI = substr($URI,6,strlen($URI));            
+            $titleURI = substr($URI,6,strlen($URI));
             $db = new BlogModel();
             $title = $db->getDataFromDB($titleURI);
 
